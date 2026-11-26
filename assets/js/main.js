@@ -103,7 +103,7 @@
       hero_badge: "Open to Fullstack Developer Opportunities",
       hero_greeting: "Hi, I'm",
       hero_objective:
-        "Software Developer with hands-on experience in backend and full-stack development using ASP.NET Core (.NET 8), ABP Framework, RESTful APIs, SQL Server, React, Angular, and Flutter/Dart. Seeking a Fullstack Developer opportunity to apply practical experience in enterprise microservices and web/mobile systems while continuing to grow in a professional development environment.",
+        "Fullstack Software Developer driven by curiosity, self-directed exploration, and a passion for building practical software that solves real-world operational problems. With hands-on experience spanning enterprise Microservices (.NET 8, ABP Framework, SQL Server) and Web/Mobile applications (React, Angular, Flutter/Dart), I enjoy diving into business workflows, learning new technologies independently, and turning complex requirements into reliable, impactful software.",
       meta_focus: "Primary Focus",
       meta_education: "Education",
       meta_location: "Location",
@@ -151,7 +151,7 @@
       hero_badge: "Sẵn sàng cho vị trí Fullstack Developer",
       hero_greeting: "Xin chào, mình là",
       hero_objective:
-        "Lập trình viên Phần mềm (Software Developer) với kinh nghiệm thực tế phát triển backend và full-stack bằng ASP.NET Core (.NET 8), ABP Framework, RESTful APIs, SQL Server, React, Angular và Flutter/Dart. Mong muốn tìm kiếm cơ hội ở vị trí Fullstack Developer để áp dụng kinh nghiệm thực tiễn trong các hệ thống microservices doanh nghiệp và web/mobile, tiếp tục phát triển trong môi trường chuyên nghiệp.",
+        "Lập trình viên Fullstack có tinh thần chủ động tìm tòi, yêu thích tự khám phá công nghệ mới và trực tiếp xây dựng phần mềm để giải quyết các bài toán vận hành thực tế. Với kinh nghiệm thực chiến từ hệ thống Microservices doanh nghiệp (.NET 8, ABP Framework, SQL Server) đến ứng dụng Web/Mobile (React, Angular, Flutter/Dart), mình luôn hứng thú phân tích quy trình nghiệp vụ và biến ý tưởng thành sản phẩm chạy ổn định, mang lại giá trị rõ ràng cho người dùng.",
       meta_focus: "Định hướng chính",
       meta_education: "Học vấn",
       meta_location: "Địa điểm",
