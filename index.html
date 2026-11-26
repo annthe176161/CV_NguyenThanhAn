@@ -1,13 +1,391 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nguyễn Thành An — Software Developer (.NET, ASP.NET Core, RESTful APIs, Flutter, SQL Server). View profile, experience, projects, and download CV." />
   <title>Nguyễn Thành An — Software Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <!-- Main content will be built here -->
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark">NA</span>
+        <span class="brand-text">NguyenThanhAn<span class="accent">.dev</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary Navigation">
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#experience" data-i18n="nav_experience">Experience</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#education" data-i18n="nav_education">Education</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="langToggle" type="button" title="Switch language (EN / VI)" aria-label="Switch language">
+          <span id="langLabel">EN</span>
+        </button>
+
+        <button class="icon-btn" id="themeToggle" type="button" title="Toggle Dark / Light mode" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <a href="assets/cv/NguyenThanhAn_SoftwareDeveloper_CV.pdf" download class="btn btn-primary btn-sm nav-cv-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span data-i18n="btn_download_cv_short">Download CV</span>
+        </a>
+
+        <button class="hamburger" id="menuToggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span data-i18n="hero_badge">Open to .NET Developer Opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span data-i18n="hero_greeting">Hi, I'm</span> <span class="gradient-text">Nguyễn Thành An</span>
+          </h1>
+          <p class="hero-subtitle">Software Developer &middot; ASP.NET Core &amp; Fullstack / Mobile</p>
+
+          <p class="hero-description" data-i18n="hero_objective">
+            Final-year Software Engineering student with hands-on experience in software development, using ASP.NET Core, RESTful APIs, Flutter/Dart, and SQL Server. Seeking a .NET Developer opportunity to apply practical experience and continue growing in a professional development environment.
+          </p>
+
+          <div class="hero-cta">
+            <a href="assets/cv/NguyenThanhAn_SoftwareDeveloper_CV.pdf" download class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span data-i18n="btn_download_cv">Download CV (PDF)</span>
+            </a>
+
+            <a href="assets/cv/NguyenThanhAn_SoftwareDeveloper_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              <span data-i18n="btn_view_pdf">Preview PDF</span>
+            </a>
+
+            <a href="#contact" class="btn btn-ghost" data-i18n="btn_contact">Contact Me</a>
+          </div>
+
+          <div class="hero-quick-links">
+            <a href="https://github.com/annthe176161" target="_blank" rel="noopener noreferrer" class="quick-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              <span>github.com/annthe176161</span>
+            </a>
+            <span class="quick-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Nam Tu Liem, Ha Noi</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Profile Summary Card -->
+        <aside class="profile-card reveal">
+          <div class="profile-card-header">
+            <div class="avatar-ring">
+              <div class="avatar-monogram" aria-hidden="true">NA</div>
+            </div>
+            <div>
+              <h2 class="profile-name">Nguyễn Thành An</h2>
+              <p class="profile-role">Software Developer</p>
+            </div>
+          </div>
+
+          <ul class="profile-meta">
+            <li>
+              <span class="meta-label" data-i18n="meta_focus">Primary Focus</span>
+              <span class="meta-value">.NET / ASP.NET Core 8</span>
+            </li>
+            <li>
+              <span class="meta-label" data-i18n="meta_education">Education</span>
+              <span class="meta-value">FPT University Hanoi</span>
+            </li>
+            <li>
+              <span class="meta-label">GPA</span>
+              <span class="meta-value">3.0 / 4.0</span>
+            </li>
+            <li>
+              <span class="meta-label" data-i18n="meta_location">Location</span>
+              <span class="meta-value">Nam Tu Liem, Ha Noi</span>
+            </li>
+          </ul>
+
+          <div class="profile-card-footer">
+            <button type="button" class="copy-chip" data-copy="thanhan01236339441@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>thanhan01236339441@gmail.com</span>
+            </button>
+            <button type="button" class="copy-chip" data-copy="0836339441">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>0836339441</span>
+            </button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow" data-i18n="skills_eyebrow">Tech Stack</span>
+          <h2 class="section-title" data-i18n="skills_title">Technical Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="card skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon">{ }</span>
+              <h3 data-i18n="skill_cat_lang">Programming Languages</h3>
+            </div>
+            <div class="tag-list">
+              <span class="tag tag-highlight">C#</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML / CSS</span>
+            </div>
+          </article>
+
+          <article class="card skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon">API</span>
+              <h3 data-i18n="skill_cat_backend">Backend Development</h3>
+            </div>
+            <div class="tag-list">
+              <span class="tag tag-highlight">ASP.NET Core 8 Web API</span>
+              <span class="tag">Entity Framework Core (EF Core)</span>
+              <span class="tag">LINQ</span>
+              <span class="tag">RESTful API</span>
+              <span class="tag">Layered Architecture</span>
+            </div>
+          </article>
+
+          <article class="card skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon">UI</span>
+              <h3 data-i18n="skill_cat_mobile">Mobile &amp; Frontend</h3>
+            </div>
+            <div class="tag-list">
+              <span class="tag tag-highlight">Flutter / Dart</span>
+              <span class="tag">React</span>
+            </div>
+          </article>
+
+          <article class="card skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon">DB</span>
+              <h3 data-i18n="skill_cat_tools">Database &amp; Tools</h3>
+            </div>
+            <div class="tag-list">
+              <span class="tag tag-highlight">SQL Server</span>
+              <span class="tag">Git / GitHub</span>
+              <span class="tag">Postman</span>
+              <span class="tag">Swagger</span>
+              <span class="tag">Visual Studio 2022</span>
+              <span class="tag">Visual Studio Code</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow" data-i18n="exp_eyebrow">Career Journey</span>
+          <h2 class="section-title" data-i18n="exp_title">Work Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="card timeline-card">
+              <div class="timeline-head">
+                <div>
+                  <h3>Fullstack &amp; Mobile App Developer</h3>
+                  <p class="company-name">CÔNG TY TNHH RND LÂM ANH</p>
+                </div>
+                <span class="date-badge">July 2026 – Sep 2026</span>
+              </div>
+              <ul class="bullet-list" data-i18n-list="exp_rnd">
+                <li>Developed and maintained an <strong>enterprise ERP system</strong> and two <strong>Flutter/Dart mobile applications</strong> for elevator maintenance, repair, and IoT operations.</li>
+                <li>Studied business processes, system documentation, data flows, and project structure before implementing features and resolving real-world issues.</li>
+                <li>Developed mobile features based on business workflows and user roles, integrated RESTful APIs, and processed API data on the client side.</li>
+                <li>Worked with dynamic data and configurations from the Web/ERP system, handling business logic, validation, filtering, workflows, and large datasets, while implementing business-specific configurations based on dynamic data.</li>
+                <li>Collaborated with the Technical Lead and team members to investigate issues, review implementations, and deliver features for enterprise customers.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="card timeline-card">
+              <div class="timeline-head">
+                <div>
+                  <h3>.NET Developer Intern</h3>
+                  <p class="company-name">FPT Software .NET Internship Training</p>
+                </div>
+                <span class="date-badge">Jun 2024 – Dec 2024</span>
+              </div>
+              <ul class="bullet-list" data-i18n-list="exp_fsoft">
+                <li>Under mentor guidance, developed foundational knowledge of <strong>ASP.NET</strong> and <strong>Angular</strong>, contributed to project documentation, and assisted with test case preparation throughout the internship.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow" data-i18n="proj_eyebrow">Featured Work</span>
+          <h2 class="section-title" data-i18n="proj_title">Projects</h2>
+        </div>
+
+        <article class="card project-card reveal">
+          <div class="project-header">
+            <div>
+              <div class="project-meta-row">
+                <span class="role-pill">Backend Developer</span>
+                <span class="team-pill" data-i18n="proj_team">Team of 5 members</span>
+                <span class="date-badge">Sep 2025 – Dec 2025</span>
+              </div>
+              <h3 class="project-title">FITSKIP — Factory Incident and Maintenance Management System</h3>
+            </div>
+            <a href="https://github.com/HoangVT512/SEP490_G78_FITS-KIP" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              <span data-i18n="btn_source_code">Source Code</span>
+            </a>
+          </div>
+
+          <p class="project-overview" data-i18n="proj_overview">
+            Built a real-world factory management system for KIP Factory in Son Tay, Hanoi to digitize incident reporting, maintenance requests, spare part management, and approval workflows.
+          </p>
+
+          <div class="project-body">
+            <h4 data-i18n="proj_resp_title">Key Responsibilities</h4>
+            <ul class="bullet-list" data-i18n-list="proj_resp">
+              <li>Developed backend RESTful APIs and core business logic using <strong>ASP.NET Core Web API</strong>, <strong>Entity Framework Core</strong>, and <strong>SQL Server</strong>.</li>
+              <li>Implemented <strong>JWT authentication</strong>, role-based authorization, and <strong>Azure Blob Storage</strong> integration.</li>
+            </ul>
+          </div>
+
+          <div class="tag-list project-tags">
+            <span class="tag tag-highlight">ASP.NET Core</span>
+            <span class="tag">Entity Framework Core</span>
+            <span class="tag">SQL Server</span>
+            <span class="tag">JWT</span>
+            <span class="tag">SignalR</span>
+            <span class="tag">Twilio</span>
+            <span class="tag">Azure Blob Storage</span>
+            <span class="tag">React</span>
+            <span class="tag">Android</span>
+            <span class="tag">RESTful API</span>
+            <span class="tag">Unit Testing</span>
+            <span class="tag">Integration Testing</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow" data-i18n="edu_eyebrow">Academic Background</span>
+          <h2 class="section-title" data-i18n="edu_title">Education</h2>
+        </div>
+
+        <article class="card edu-card reveal">
+          <div class="edu-main">
+            <div>
+              <h3>FPT University, Hanoi</h3>
+              <p class="edu-major" data-i18n="edu_major">Major: Software Engineering</p>
+            </div>
+            <span class="date-badge">Oct 2021 – Expected Nov 2026</span>
+          </div>
+
+          <div class="edu-highlights">
+            <div class="edu-stat">
+              <span class="edu-stat-label">GPA</span>
+              <span class="edu-stat-value">3.0 / 4.0</span>
+            </div>
+            <div class="edu-stat">
+              <span class="edu-stat-label" data-i18n="edu_award_label">Honors</span>
+              <span class="edu-stat-value" data-i18n="edu_award_val">Very Good Student — Fall 2023, Summer 2025</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="card contact-banner reveal">
+          <div class="contact-banner-text">
+            <span class="section-eyebrow" data-i18n="contact_eyebrow">Get In Touch</span>
+            <h2 class="section-title" data-i18n="contact_title">Let's Connect</h2>
+            <p data-i18n="contact_desc">
+              I'm actively looking for a .NET Developer position. Feel free to reach out via email, phone, or download my CV below.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <button type="button" class="contact-card-btn copy-chip" data-copy="thanhan01236339441@gmail.com">
+              <span class="contact-label">Email</span>
+              <span class="contact-val">thanhan01236339441@gmail.com</span>
+            </button>
+            <button type="button" class="contact-card-btn copy-chip" data-copy="0836339441">
+              <span class="contact-label" data-i18n="contact_phone">Phone</span>
+              <span class="contact-val">0836339441</span>
+            </button>
+            <a href="https://github.com/annthe176161" target="_blank" rel="noopener noreferrer" class="contact-card-btn">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-val">github.com/annthe176161</span>
+            </a>
+            <a href="assets/cv/NguyenThanhAn_SoftwareDeveloper_CV.pdf" download class="btn btn-primary contact-dl-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span data-i18n="btn_download_cv">Download CV (PDF)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Nguyễn Thành An. Built for GitHub Pages.</p>
+      <a href="#top" class="back-to-top" data-i18n="back_to_top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>
