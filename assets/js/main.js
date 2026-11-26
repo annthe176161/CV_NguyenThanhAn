@@ -135,6 +135,14 @@
       proj2_title: "Independent Fullstack Software System (Upcoming)",
       proj2_overview:
         "Currently designing and building a standalone full-stack application from scratch — taking full ownership of system architecture, database modeling, backend APIs, frontend UI, and deployment to solve a real-world problem end-to-end.",
+      proj2_ui_title: "UI Screenshots",
+      proj2_ui_1: "Dashboard UI",
+      proj2_ui_2: "Core Workflow",
+      proj2_ui_3: "Admin & APIs",
+      proj2_media_soon: "Coming soon",
+      proj2_video_title: "System Demo Video",
+      proj2_video_heading: "End-to-End Walkthrough Demo",
+      proj2_video_sub: "Video demo will be embedded here once the system is completed.",
       edu_eyebrow: "Academic Background",
       edu_title: "Education",
       edu_major: "Major: Software Engineering",
@@ -195,6 +203,14 @@
       proj2_title: "Hệ thống Phần mềm Fullstack Độc lập (Sắp ra mắt)",
       proj2_overview:
         "Đang trực tiếp thiết kế và xây dựng một ứng dụng fullstack độc lập từ con số 0 — tự chủ toàn bộ quy trình từ phân tích bài toán thực tế, kiến trúc hệ thống, thiết kế cơ sở dữ liệu, backend API đến giao diện người dùng và triển khai vận hành.",
+      proj2_ui_title: "Ảnh giao diện sản phẩm",
+      proj2_ui_1: "Màn hình chính",
+      proj2_ui_2: "Luồng nghiệp vụ",
+      proj2_ui_3: "Quản trị & API",
+      proj2_media_soon: "Đang cập nhật",
+      proj2_video_title: "Video Demo Hệ thống",
+      proj2_video_heading: "Video giới thiệu vận hành từ A–Z",
+      proj2_video_sub: "Video demo sẽ được nhúng tại đây sau khi hoàn thiện sản phẩm.",
       edu_eyebrow: "Nền tảng học vấn",
       edu_title: "Học vấn",
       edu_major: "Chuyên ngành: Kỹ thuật Phần mềm (Software Engineering)",
@@ -293,5 +309,39 @@
   langToggle?.addEventListener("click", () => {
     const current = htmlEl.getAttribute("lang") || "en";
     applyLanguage(current === "en" ? "vi" : "en");
+  });
+
+  /* ---------- Image Lightbox ---------- */
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightboxImg");
+  const lightboxCaption = document.getElementById("lightboxCaption");
+  const lightboxClose = document.getElementById("lightboxClose");
+
+  function closeLightbox() {
+    if (!lightbox) return;
+    lightbox.classList.remove("open");
+    lightbox.setAttribute("aria-hidden", "true");
+    if (lightboxImg) lightboxImg.src = "";
+  }
+
+  document.querySelectorAll(".screenshot-slot.has-image img").forEach((img) => {
+    img.addEventListener("click", () => {
+      if (!lightbox || !lightboxImg) return;
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt || "";
+      if (lightboxCaption) {
+        lightboxCaption.textContent = img.getAttribute("data-caption") || img.alt || "";
+      }
+      lightbox.classList.add("open");
+      lightbox.setAttribute("aria-hidden", "false");
+    });
+  });
+
+  lightboxClose?.addEventListener("click", closeLightbox);
+  lightbox?.addEventListener("click", (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeLightbox();
   });
 })();

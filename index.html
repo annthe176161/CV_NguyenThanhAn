@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="assets/css/style.css?v=5" />
+  <link rel="stylesheet" href="assets/css/style.css?v=6" />
 </head>
 <body>
   <!-- Navigation -->
@@ -348,9 +348,50 @@
             </div>
           </div>
 
-          <p class="project-overview" style="margin-bottom: 0;" data-i18n="proj2_overview">
+          <p class="project-overview" data-i18n="proj2_overview">
             Currently designing and building a standalone full-stack application from scratch — taking full ownership of system architecture, database modeling, backend APIs, frontend UI, and deployment to solve a real-world problem end-to-end.
           </p>
+
+          <!-- Media Showcase: UI Screenshots & Video Demo -->
+          <div class="project-media-grid">
+            <div class="media-block">
+              <div class="media-block-head">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                <span data-i18n="proj2_ui_title">UI Screenshots</span>
+              </div>
+              <div class="screenshot-grid">
+                <div class="screenshot-slot" data-lightbox-title="Dashboard Overview">
+                  <span class="slot-badge">01</span>
+                  <span class="slot-label" data-i18n="proj2_ui_1">Dashboard UI</span>
+                  <span class="slot-hint" data-i18n="proj2_media_soon">Coming soon</span>
+                </div>
+                <div class="screenshot-slot" data-lightbox-title="Core Workflow">
+                  <span class="slot-badge">02</span>
+                  <span class="slot-label" data-i18n="proj2_ui_2">Core Workflow</span>
+                  <span class="slot-hint" data-i18n="proj2_media_soon">Coming soon</span>
+                </div>
+                <div class="screenshot-slot" data-lightbox-title="API &amp; Management">
+                  <span class="slot-badge">03</span>
+                  <span class="slot-label" data-i18n="proj2_ui_3">Admin &amp; APIs</span>
+                  <span class="slot-hint" data-i18n="proj2_media_soon">Coming soon</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="media-block">
+              <div class="media-block-head">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                <span data-i18n="proj2_video_title">System Demo Video</span>
+              </div>
+              <div class="video-placeholder">
+                <div class="play-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+                <p class="video-title" data-i18n="proj2_video_heading">End-to-End Walkthrough Demo</p>
+                <p class="video-sub" data-i18n="proj2_video_sub">Video demo will be embedded here once the system is completed.</p>
+              </div>
+            </div>
+          </div>
 
           <div class="tag-list project-tags">
             <span class="tag tag-highlight">.NET 8 / ASP.NET Core</span>
@@ -437,9 +478,18 @@
     </div>
   </footer>
 
+  <!-- Image Lightbox Modal -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image Preview">
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close preview">&times;</button>
+    <div class="lightbox-body">
+      <img id="lightboxImg" src="" alt="" />
+      <p id="lightboxCaption"></p>
+    </div>
+  </div>
+
   <!-- Toast notification -->
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="assets/js/main.js?v=11"></script>
+  <script src="assets/js/main.js?v=12"></script>
 </body>
 </html>
