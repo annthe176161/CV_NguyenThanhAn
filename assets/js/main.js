@@ -229,8 +229,8 @@
   const listTranslations = {
     en: {
       exp_tinduc: [
-        "Developed and maintained backend services using <strong>ASP.NET Core 8</strong> and <strong>ABP Framework</strong> within a <strong>Microservices architecture</strong>, focusing on the Road Fee Collection (Thu phí đường bộ) service.",
-        "Implemented core business logic for fee receipts (Biên lai thu phí), fee calculation, refunds/adjustments, and approval/status workflows.",
+        "Developed and maintained full-stack features using <strong>ASP.NET Core 8</strong>, <strong>ABP Framework</strong> (<strong>Microservices architecture</strong>), and <strong>Angular</strong>, focusing on the Road Fee Collection (Thu phí đường bộ) service.",
+        "Built <strong>Angular</strong> UI screens and implemented core backend logic for fee receipts (Biên lai thu phí), fee calculation, refunds/adjustments, and approval/status workflows.",
         "Worked with <strong>SQL Server</strong> and <strong>Stored Procedures</strong> to handle large-scale datasets, reporting, and data synchronization.",
         "Integrated third-party APIs (<strong>MISA</strong> e-invoice/accounting system) and internal services (<strong>Identity/OpenIddict</strong>, File Management, Digital Signature, <strong>VietQR</strong>) to synchronize data and support end-to-end business workflows.",
         "Collaborated directly with enterprise customers and the internal team to gather requirements, investigate production issues, and deliver features on schedule."
@@ -252,8 +252,8 @@
     },
     vi: {
       exp_tinduc: [
-        "Phát triển và bảo trì các dịch vụ backend sử dụng <strong>ASP.NET Core 8</strong> và <strong>ABP Framework</strong> theo kiến trúc <strong>Microservices</strong>, tập trung vào dịch vụ Thu phí đường bộ.",
-        "Triển khai nghiệp vụ cốt lõi cho Biên lai thu phí, tính phí, hoàn/điều chỉnh phí và quy trình phê duyệt/trạng thái.",
+        "Phát triển và bảo trì các tính năng full-stack sử dụng <strong>ASP.NET Core 8</strong>, <strong>ABP Framework</strong> (kiến trúc <strong>Microservices</strong>) và <strong>Angular</strong>, tập trung vào phân hệ Thu phí đường bộ.",
+        "Xây dựng giao diện người dùng bằng <strong>Angular</strong> và triển khai nghiệp vụ cốt lõi cho Biên lai thu phí, tính phí, hoàn/điều chỉnh phí và quy trình phê duyệt/trạng thái.",
         "Làm việc với <strong>SQL Server</strong> và <strong>Stored Procedures</strong> để xử lý tập dữ liệu lớn, báo cáo và đồng bộ dữ liệu.",
         "Tích hợp API bên thứ ba (hệ thống hóa đơn điện tử/kế toán <strong>MISA</strong>) và các dịch vụ nội bộ (<strong>Identity/OpenIddict</strong>, Quản lý tệp, Chữ ký số, <strong>VietQR</strong>) để đồng bộ dữ liệu và hỗ trợ luồng nghiệp vụ đầu-cuối.",
         "Phối hợp trực tiếp với khách hàng doanh nghiệp và đội ngũ nội bộ để tiếp nhận yêu cầu, điều tra sự cố production và bàn giao tính năng đúng tiến độ."
