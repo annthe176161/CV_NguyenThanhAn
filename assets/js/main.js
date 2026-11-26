@@ -117,6 +117,11 @@
       exp_title: "Work Experience",
       exp_tinduc_proj:
         "Project: Road Fee Collection & Vehicle Inspection Management System (Vietnam Register - Cục Đăng Kiểm Việt Nam).",
+      date_tinduc: "Oct 2026 – Present",
+      date_rnd: "Jun 2026 – Sep 2026",
+      date_fsoft: "Jun 2024 – Dec 2024",
+      date_fitskip: "Sep 2025 – Dec 2025",
+      date_fpt: "Oct 2021 – May 2026",
       proj_eyebrow: "Featured Work",
       proj_title: "Projects",
       proj_team: "Team of 5 members",
@@ -165,6 +170,11 @@
       exp_title: "Kinh nghiệm làm việc",
       exp_tinduc_proj:
         "Dự án: Hệ thống Quản lý Đăng kiểm & Thu phí đường bộ (Cục Đăng Kiểm Việt Nam).",
+      date_tinduc: "10/2026 – Hiện tại",
+      date_rnd: "06/2026 – 09/2026",
+      date_fsoft: "06/2024 – 12/2024",
+      date_fitskip: "09/2025 – 12/2025",
+      date_fpt: "10/2021 – 05/2026",
       proj_eyebrow: "Dự án nổi bật",
       proj_title: "Dự án",
       proj_team: "Nhóm 5 thành viên",
