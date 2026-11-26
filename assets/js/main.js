@@ -127,7 +127,7 @@
       edu_title: "Education",
       edu_major: "Major: Software Engineering",
       edu_award_label: "Honors",
-      edu_award_val: "Very Good Student — Fall 2023, Summer 2025",
+      edu_award_val: "30% Scholarship · Very Good Student (Fall 2023, Summer 2025)",
       contact_eyebrow: "Get In Touch",
       contact_title: "Let's Connect",
       contact_desc:
@@ -174,7 +174,7 @@
       edu_title: "Học vấn",
       edu_major: "Chuyên ngành: Kỹ thuật Phần mềm (Software Engineering)",
       edu_award_label: "Thành tích",
-      edu_award_val: "Sinh viên Giỏi (Very Good Student) — Fall 2023, Summer 2025",
+      edu_award_val: "Học bổng 30% ĐH FPT · Sinh viên Giỏi (Fall 2023, Summer 2025)",
       contact_eyebrow: "Kết nối",
       contact_title: "Liên hệ với mình",
       contact_desc:
