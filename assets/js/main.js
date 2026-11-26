@@ -100,10 +100,10 @@
       btn_view_pdf: "Preview PDF",
       btn_contact: "Contact Me",
       btn_source_code: "Source Code",
-      hero_badge: "Open to .NET Developer Opportunities",
+      hero_badge: "Open to Fullstack Developer Opportunities",
       hero_greeting: "Hi, I'm",
       hero_objective:
-        "Software Developer with hands-on experience in backend and full-stack development using ASP.NET Core (.NET 8), ABP Framework, RESTful APIs, SQL Server, and Flutter/Dart. Seeking a .NET Developer opportunity to apply practical experience in enterprise microservices systems and continue growing in a professional development environment.",
+        "Software Developer with hands-on experience in backend and full-stack development using ASP.NET Core (.NET 8), ABP Framework, RESTful APIs, SQL Server, React, Angular, and Flutter/Dart. Seeking a Fullstack Developer opportunity to apply practical experience in enterprise microservices and web/mobile systems while continuing to grow in a professional development environment.",
       meta_focus: "Primary Focus",
       meta_education: "Education",
       meta_location: "Location",
@@ -131,7 +131,7 @@
       contact_eyebrow: "Get In Touch",
       contact_title: "Let's Connect",
       contact_desc:
-        "I'm actively looking for a .NET Developer position. Feel free to reach out via email, phone, or download my CV below.",
+        "I'm actively looking for a Fullstack Developer position. Feel free to reach out via email, phone, or download my CV below.",
       contact_phone: "Phone",
       back_to_top: "Back to top ↑"
     },
@@ -147,10 +147,10 @@
       btn_view_pdf: "Xem bản PDF",
       btn_contact: "Liên hệ",
       btn_source_code: "Mã nguồn",
-      hero_badge: "Sẵn sàng cho vị trí .NET Developer",
+      hero_badge: "Sẵn sàng cho vị trí Fullstack Developer",
       hero_greeting: "Xin chào, mình là",
       hero_objective:
-        "Lập trình viên Phần mềm (Software Developer) với kinh nghiệm thực tế phát triển backend và full-stack bằng ASP.NET Core (.NET 8), ABP Framework, RESTful APIs, SQL Server và Flutter/Dart. Mong muốn tìm kiếm cơ hội ở vị trí .NET Developer để áp dụng kinh nghiệm thực tiễn trong các hệ thống microservices doanh nghiệp và tiếp tục phát triển trong môi trường chuyên nghiệp.",
+        "Lập trình viên Phần mềm (Software Developer) với kinh nghiệm thực tế phát triển backend và full-stack bằng ASP.NET Core (.NET 8), ABP Framework, RESTful APIs, SQL Server, React, Angular và Flutter/Dart. Mong muốn tìm kiếm cơ hội ở vị trí Fullstack Developer để áp dụng kinh nghiệm thực tiễn trong các hệ thống microservices doanh nghiệp và web/mobile, tiếp tục phát triển trong môi trường chuyên nghiệp.",
       meta_focus: "Định hướng chính",
       meta_education: "Học vấn",
       meta_location: "Địa điểm",
@@ -178,7 +178,7 @@
       contact_eyebrow: "Kết nối",
       contact_title: "Liên hệ với mình",
       contact_desc:
-        "Mình đang tìm kiếm cơ hội ở vị trí .NET Developer. Anh/chị nhà tuyển dụng có thể liên hệ qua email, số điện thoại hoặc tải trực tiếp CV PDF bên dưới.",
+        "Mình đang tìm kiếm cơ hội ở vị trí Fullstack Developer. Anh/chị nhà tuyển dụng có thể liên hệ qua email, số điện thoại hoặc tải trực tiếp CV PDF bên dưới.",
       contact_phone: "Điện thoại",
       back_to_top: "Về đầu trang ↑"
     }
