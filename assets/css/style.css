@@ -568,36 +568,20 @@ a.quick-link:hover {
 
 /* ---------- Timeline (Experience) ---------- */
 .timeline {
-  position: relative;
   display: grid;
   gap: 16px;
-  padding-left: 26px;
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 7px;
-  top: 10px;
-  bottom: 10px;
-  width: 2px;
-  background: var(--border);
-}
-
-.timeline-item {
-  position: relative;
 }
 
 .timeline-marker {
-  position: absolute;
-  left: -26px;
-  top: 26px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: var(--primary);
-  border: 3px solid var(--bg-alt);
-  box-shadow: 0 0 0 2px var(--primary);
+  display: none;
+}
+
+.timeline-card {
+  border-left: 3px solid var(--border);
+}
+
+.timeline-item:first-child .timeline-card {
+  border-left: 4px solid var(--primary);
 }
 
 .timeline-head {
