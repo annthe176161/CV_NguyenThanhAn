@@ -133,6 +133,7 @@
       contact_desc:
         "I'm actively looking for a Fullstack Developer position. Feel free to reach out via email, phone, or download my CV below.",
       contact_phone: "Phone",
+      footer_role: "Fullstack Software Developer",
       back_to_top: "Back to top ↑"
     },
     vi: {
@@ -180,6 +181,7 @@
       contact_desc:
         "Mình đang tìm kiếm cơ hội ở vị trí Fullstack Developer. Anh/chị nhà tuyển dụng có thể liên hệ qua email, số điện thoại hoặc tải trực tiếp CV PDF bên dưới.",
       contact_phone: "Điện thoại",
+      footer_role: "Lập trình viên Fullstack",
       back_to_top: "Về đầu trang ↑"
     }
   };
