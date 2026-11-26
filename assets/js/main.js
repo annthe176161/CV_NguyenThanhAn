@@ -238,6 +238,10 @@
   function applyLanguage(lang) {
     htmlEl.setAttribute("lang", lang);
     if (langLabel) langLabel.textContent = lang.toUpperCase();
+    document.title =
+      lang === "vi"
+        ? "Nguyễn Thành An — Lập trình viên Fullstack"
+        : "Nguyễn Thành An — Fullstack Developer";
 
     const dict = translations[lang] || translations.en;
     document.querySelectorAll("[data-i18n]").forEach((el) => {
