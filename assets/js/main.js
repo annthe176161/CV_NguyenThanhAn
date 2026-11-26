@@ -103,7 +103,7 @@
       hero_badge: "Open to .NET Developer Opportunities",
       hero_greeting: "Hi, I'm",
       hero_objective:
-        "Final-year Software Engineering student with hands-on experience in software development, using ASP.NET Core, RESTful APIs, Flutter/Dart, and SQL Server. Seeking a .NET Developer opportunity to apply practical experience and continue growing in a professional development environment.",
+        "Software Developer with hands-on experience in backend and full-stack development using ASP.NET Core (.NET 8), ABP Framework, RESTful APIs, SQL Server, and Flutter/Dart. Seeking a .NET Developer opportunity to apply practical experience in enterprise microservices systems and continue growing in a professional development environment.",
       meta_focus: "Primary Focus",
       meta_education: "Education",
       meta_location: "Location",
@@ -115,6 +115,8 @@
       skill_cat_tools: "Database & Tools",
       exp_eyebrow: "Career Journey",
       exp_title: "Work Experience",
+      exp_tinduc_proj:
+        "Project: Road Fee Collection & Vehicle Inspection Management System (Vietnam Register - Cục Đăng Kiểm Việt Nam).",
       proj_eyebrow: "Featured Work",
       proj_title: "Projects",
       proj_team: "Team of 5 members",
@@ -148,7 +150,7 @@
       hero_badge: "Sẵn sàng cho vị trí .NET Developer",
       hero_greeting: "Xin chào, mình là",
       hero_objective:
-        "Sinh viên năm cuối ngành Kỹ thuật Phần mềm với kinh nghiệm thực tế phát triển phần mềm bằng ASP.NET Core, RESTful APIs, Flutter/Dart và SQL Server. Mong muốn tìm kiếm cơ hội ở vị trí .NET Developer để áp dụng kinh nghiệm thực tiễn và tiếp tục phát triển trong môi trường chuyên nghiệp.",
+        "Lập trình viên Phần mềm (Software Developer) với kinh nghiệm thực tế phát triển backend và full-stack bằng ASP.NET Core (.NET 8), ABP Framework, RESTful APIs, SQL Server và Flutter/Dart. Mong muốn tìm kiếm cơ hội ở vị trí .NET Developer để áp dụng kinh nghiệm thực tiễn trong các hệ thống microservices doanh nghiệp và tiếp tục phát triển trong môi trường chuyên nghiệp.",
       meta_focus: "Định hướng chính",
       meta_education: "Học vấn",
       meta_location: "Địa điểm",
@@ -160,6 +162,8 @@
       skill_cat_tools: "Cơ sở dữ liệu & Công cụ",
       exp_eyebrow: "Quá trình làm việc",
       exp_title: "Kinh nghiệm làm việc",
+      exp_tinduc_proj:
+        "Dự án: Hệ thống Quản lý Đăng kiểm & Thu phí đường bộ (Cục Đăng Kiểm Việt Nam).",
       proj_eyebrow: "Dự án nổi bật",
       proj_title: "Dự án",
       proj_team: "Nhóm 5 thành viên",
@@ -182,6 +186,13 @@
 
   const listTranslations = {
     en: {
+      exp_tinduc: [
+        "Developed and maintained backend services using <strong>ASP.NET Core 8</strong> and <strong>ABP Framework</strong> within a <strong>Microservices architecture</strong>, focusing on the Road Fee Collection (Thu phí đường bộ) service.",
+        "Implemented core business logic for fee receipts (Biên lai thu phí), fee calculation, refunds/adjustments, and approval/status workflows.",
+        "Worked with <strong>SQL Server</strong> and <strong>Stored Procedures</strong> to handle large-scale datasets, reporting, and data synchronization.",
+        "Integrated third-party APIs (<strong>MISA</strong> e-invoice/accounting system) and internal services (<strong>Identity/OpenIddict</strong>, File Management, Digital Signature, <strong>VietQR</strong>) to synchronize data and support end-to-end business workflows.",
+        "Collaborated directly with enterprise customers and the internal team to gather requirements, investigate production issues, and deliver features on schedule."
+      ],
       exp_rnd: [
         "Developed and maintained an <strong>enterprise ERP system</strong> and two <strong>Flutter/Dart mobile applications</strong> for elevator maintenance, repair, and IoT operations.",
         "Studied business processes, system documentation, data flows, and project structure before implementing features and resolving real-world issues.",
@@ -198,6 +209,13 @@
       ]
     },
     vi: {
+      exp_tinduc: [
+        "Phát triển và bảo trì các dịch vụ backend sử dụng <strong>ASP.NET Core 8</strong> và <strong>ABP Framework</strong> theo kiến trúc <strong>Microservices</strong>, tập trung vào dịch vụ Thu phí đường bộ.",
+        "Triển khai nghiệp vụ cốt lõi cho Biên lai thu phí, tính phí, hoàn/điều chỉnh phí và quy trình phê duyệt/trạng thái.",
+        "Làm việc với <strong>SQL Server</strong> và <strong>Stored Procedures</strong> để xử lý tập dữ liệu lớn, báo cáo và đồng bộ dữ liệu.",
+        "Tích hợp API bên thứ ba (hệ thống hóa đơn điện tử/kế toán <strong>MISA</strong>) và các dịch vụ nội bộ (<strong>Identity/OpenIddict</strong>, Quản lý tệp, Chữ ký số, <strong>VietQR</strong>) để đồng bộ dữ liệu và hỗ trợ luồng nghiệp vụ đầu-cuối.",
+        "Phối hợp trực tiếp với khách hàng doanh nghiệp và đội ngũ nội bộ để tiếp nhận yêu cầu, điều tra sự cố production và bàn giao tính năng đúng tiến độ."
+      ],
       exp_rnd: [
         "Phát triển và bảo trì <strong>hệ thống ERP doanh nghiệp</strong> cùng hai <strong>ứng dụng di động Flutter/Dart</strong> phục vụ bảo trì, sửa chữa thang máy và vận hành IoT.",
         "Tìm hiểu quy trình nghiệp vụ, tài liệu hệ thống, luồng dữ liệu và cấu trúc dự án trước khi triển khai tính năng và xử lý sự cố thực tế.",
